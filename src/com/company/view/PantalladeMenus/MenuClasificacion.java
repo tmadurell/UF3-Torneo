@@ -1,6 +1,7 @@
 package com.company.view.PantalladeMenus;
 
 import com.company.manager.ManagerClasificacion;
+import com.company.view.PantallaClasificacion.MenuEquipoClasificacion;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -22,7 +23,7 @@ public class MenuClasificacion {
         int opcion = scanner.nextInt();
         switch (opcion){
             case 1:
-                new ManagerClasificacion().ClasificacionEquipo();
+                new MenuEquipoClasificacion().mostrar();
                 break;
             case 2:
                 new ManagerClasificacion().ClasificationParticipantes();
