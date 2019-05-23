@@ -24,7 +24,7 @@ public class MenuEquipoClasificacion {
 
             switch (opcion){
                 case 1:
-                    new InscribirEquipo().mostrar();
+         //           new InscribirEquipo().mostrar();
                     break;
                 case 2:
                     new ModificarEquipo().mostrar();
