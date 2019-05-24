@@ -14,7 +14,7 @@ public class ListaParticipante {
     public void mostrar() throws IOException {
 
         System.out.println("2.4.Lista de participantes:");
-
+        System.out.println("Estos son los participantes registrados:");
         List<Participante> participantes = ManagerParticipante.obtenerParticipante();
 
         for (Participante participante : participantes){

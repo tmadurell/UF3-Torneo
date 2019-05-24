@@ -3,6 +3,7 @@ package com.company.manager;
 
 import com.company.Crear;
 import com.company.model.Resultado;
+import com.company.view.PantalladeMenus.MenuResultado;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -37,6 +38,10 @@ public class ManagerResultado {
         outputStream.write(resultado.PartipanteLocal + Crear.SEPARATOR + resultado.resultadoLocal + Crear.SEPARATOR + resultado.PartipanteVisitante + Crear.SEPARATOR + resultado.resultadoVisitante + "\n");
 
         outputStream.close();
+
+        System.out.println("\n Se han introducido los resultados correctamente.");
+        MenuResultado menuResultado = new MenuResultado();
+        menuResultado.mostrar();
 
     }
 

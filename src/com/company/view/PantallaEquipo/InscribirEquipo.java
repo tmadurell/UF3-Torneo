@@ -31,6 +31,8 @@ public class InscribirEquipo {
         managerEquipo.crearEquipo(equipo);
 
         System.out.println();
+        System.out.println("Se creado el equipo correctamente.");
+        System.out.println();
         MenuEquipos menuEquipos = new MenuEquipos();
         menuEquipos.mostrar();
 

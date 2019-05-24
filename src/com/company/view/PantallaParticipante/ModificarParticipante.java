@@ -1,25 +1,32 @@
 package com.company.view.PantallaParticipante;
 
-import com.company.model.Participante;
+import com.company.manager.ManagerParticipante;
+import com.company.view.PantalladeMenus.MenuParticipantes;
 
+import java.io.IOException;
 import java.util.Scanner;
 
+
+
 public class ModificarParticipante {
-    String modParticipante;
+    private Scanner scanner = new Scanner(System.in);
 
-    public void mostrar() {
-        Participante participante = new Participante();
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("¿Que participante quieres modificar?");
-        modParticipante = scanner.nextLine();
-
-        System.out.println("Introduce el nuevo nombre del participante:");
-        participante.nombre = scanner.nextLine();
+    public void mostrar() throws IOException {
+        ManagerParticipante managerParticipante = new ManagerParticipante();
 
 
-        System.out.println("Introduce el nuevo nombre del equipo:");
-        participante.nombredelequipo = scanner.nextLine();
+        System.out.println("2.2.¿Que participante quieres modificar (Introduce su ID o nombre)?");
+        String modparticipantes = scanner.nextLine();
+        System.out.println("¿Que quieres modificar?\n");
+        System.out.println("1.El nombre del participante");
+        System.out.println("2.El nombre del equipo en el que esta el participante");
 
+        int opcion = scanner.nextInt();
+
+        managerParticipante.modificar(modparticipantes,opcion);
+        System.out.println("\nSe han modificado los datos del participante correctamente");
+        System.out.println();
+        MenuParticipantes menuParticipantes = new MenuParticipantes();
+        menuParticipantes.mostrar();
     }
 }

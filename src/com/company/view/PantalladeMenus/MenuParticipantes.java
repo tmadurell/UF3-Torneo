@@ -1,5 +1,6 @@
 package com.company.view.PantalladeMenus;
 
+import com.company.view.PantallaParticipante.EliminarParticipante;
 import com.company.view.PantallaParticipante.InscribirParticipante;
 import com.company.view.PantallaParticipante.ListaParticipante;
 import com.company.view.PantallaParticipante.ModificarParticipante;
@@ -34,7 +35,7 @@ public class MenuParticipantes {
                 new ModificarParticipante().mostrar();
                 break;
             case 3:
-//                new BorrarParticipante().mostrar();
+                new EliminarParticipante().mostrar();
                 break;
             case 4:
                 new ListaParticipante().mostrar();

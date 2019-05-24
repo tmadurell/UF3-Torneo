@@ -15,10 +15,13 @@ public class ListaEquipo {
     public void mostrar() throws IOException {
 
         System.out.println("1.4.Lista de Equipos:");
+        System.out.println("Estos son los equipos registrados:");
 
         List<Equipo> equipos = ManagerEquipo.obtenerEquipo();
 
         for (Equipo equipo : equipos){
+            int contador;
+            for (contador=1; contador<=10; contador++)
             System.out.println("ID:" + equipo.id + "  " + "Nombre:" + equipo.nombre + "  " + "Siglas:" + equipo.siglasdelequipo + "  " + "Ciudad:" + equipo.ciudad);
             System.out.println();
             MenuEquipos menuEquipos = new MenuEquipos();

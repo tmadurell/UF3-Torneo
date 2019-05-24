@@ -2,6 +2,7 @@ package com.company.view.PantalladeMenus;
 
 import com.company.manager.ManagerClasificacion;
 import com.company.view.PantallaClasificacion.MenuEquipoClasificacion;
+import com.company.view.PantallaClasificacion.MenuParticipanteClasificacion;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -26,7 +27,7 @@ public class MenuClasificacion {
                 new MenuEquipoClasificacion().mostrar();
                 break;
             case 2:
-                new ManagerClasificacion().ClasificationParticipantes();
+                new MenuParticipanteClasificacion().mostrar();
                 break;
             case 3:
                 MenuMain menuMain = new MenuMain();

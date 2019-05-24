@@ -101,10 +101,7 @@ public class ManagerEquipo {
         inputStream.close();
 
         equiposFiletmp.renameTo(Crear.equipoFile);
-        System.out.println("Se han modificado los cambios correctamente");
-        System.out.println();
-        MenuEquipos menuEquipos = new MenuEquipos();
-        menuEquipos.mostrar();
+
     }
 
     public void eliminar(String datoequipo) throws IOException {
@@ -126,10 +123,7 @@ public class ManagerEquipo {
 
 
         equiposFiletmp.renameTo(Crear.equipoFile);
-        System.out.println("Se ha eliminado el equipo correctamente");
-        System.out.println();
-        MenuEquipos menuEquipos = new MenuEquipos();
-        menuEquipos.mostrar();
+
     }
 
 }

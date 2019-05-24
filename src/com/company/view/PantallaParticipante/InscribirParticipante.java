@@ -19,16 +19,18 @@ public class InscribirParticipante {
 
         System.out.println("2.1.Inscribir un participante");
 
-        System.out.println("Nombre del participante:");
+        System.out.println("Escribe el nombre del participante:");
         participantes.nombre = scanner.nextLine();
 
-        System.out.println("Nombre del equipo en el que está inscrito el participante:");
+        System.out.println("Escribe nombre del equipo en el que está inscrito el participante:");
         participantes.nombredelequipo = scanner.nextLine();
         System.out.println();
 
-//      ManagerParticipante.id(participantes);
+
         ManagerParticipante.crearParticipante(participantes);
 
+        System.out.println();
+        System.out.println("Se creado el participante correctamente.");
         System.out.println();
         MenuParticipantes menuParticipantes = new MenuParticipantes();
         menuParticipantes.mostrar();
